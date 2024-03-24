@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 float lastOriginalPrediction = originalPredictions[originalPredictions.length - 1];
 
                 String result = String.format("날짜 차: %d\n날짜: %s\n입력 시간: %s\n혼잡도: %.2f",
-                        dateDiff, input_date, input_time, lastOriginalPrediction);
+                        dateDiff, input_date, input_time, (lastOriginalPrediction/26541)*250);
                 resultTextView.setText(result);
             }
         });
